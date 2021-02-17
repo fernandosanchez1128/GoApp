@@ -8,7 +8,7 @@ Rest endpoints
 To use sortEndpoint hit the follow url using POST method
 http://localhost:8080/sort
 
-Request should look like 
+Request should look like this
 ```json
 {
     "unsorted": [2,10,20,2,5,8,7,4,7,8,9,15,20,11,15,20,20]
@@ -23,7 +23,7 @@ Response will look like this
 }
 ```
 
-Notice the sorted list will put repeated elements at the of the list. THis sorting algorithm is bases on MergeSort algorithm and its complexity is O (N*log(N))
+Notice the sorted list will put repeated elements at the end of the list. THis sorting algorithm is bases on MergeSort algorithm and its complexity is O (N*log(N))
 
 2) User info Request
 
@@ -65,7 +65,7 @@ insert into phone (phone_number, owner)values
 
 * Notice you can easily change DB params on ``resources/config.properties`` file. the project suppose your ${GOPATH} variable point to you Go folder
 
-to hit the endpoint you will need to sen request to this endpoint
+to hit the endpoint you will need to send request to this endpoint
 http://localhost:8080/user/1234 using GET method. Note: in that request `1234` refers to person document.
 
 it will return a response like this 
